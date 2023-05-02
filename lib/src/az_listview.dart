@@ -28,6 +28,7 @@ class AzListView extends StatefulWidget {
     this.indexBarAlignment = Alignment.centerRight,
     this.indexBarMargin,
     this.indexBarOptions = const IndexBarOptions(),
+    this.scrollController,
   }) : super(key: key);
 
   /// with  ISuspensionBean Data
@@ -42,6 +43,8 @@ class AzListView extends StatefulWidget {
 
   /// Controller for jumping or scrolling to an item.
   final ItemScrollController? itemScrollController;
+
+  final ScrollController? scrollController;
 
   /// Notifier that reports the items laid out in the list after each frame.
   final ItemPositionsListener? itemPositionsListener;
